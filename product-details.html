@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details - Kids' Adventure Sneakers</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/product.css" />
+    <link rel="stylesheet" href="src/css/product-details.css" />
+    <style>
+      .product-image-gallery {
+        position: relative;
+      }
+
+      .main-image {
+        overflow: hidden;
+        position: relative;
+      }
+
+      .main-image img {
+        transition: transform 0.3s ease;
+        width: 100%;
+        max-width: 400px;
+        display: block;
+      }
+
+      .main-image:hover img {
+        transform: scale(1.1);
+        cursor: zoom-in;
+      }
+
+      .thumbnail-images {
+        margin-top: 15px;
+        display: flex;
+        gap: 10px;
+      }
+
+      .thumbnail-images img {
+        transition: transform 0.2s ease;
+        border: 2px solid transparent;
+      }
+
+      .thumbnail-images img:hover {
+        transform: scale(1.05);
+        border-color: #ccc;
+      }
+
+      .main-image:hover img {
+        transform: scale(1.2);
+      }
+      .main-image img {
+        transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="header-container">
+      <div class="product-category">
+        <div>
+          <a href="/products.html#mens-shoes">Mens</a>
+        </div>
+        <div>
+          <a href="/products.html#womens-shoes">Womens</a>
+        </div>
+        <div>
+          <a href="/products.html#children-shoes">Kids</a>
+        </div>
+        <div>
+          <a href="src/Final Group Coursework Information System Documentation.pdf">Accessories</a>
+        </div>
+      </div>
+      <div class="header-logo">
+        <img src="/src/images/daud-logo.png" alt="Daud Logo" style="width: 80px" />
+      </div>
+      <div class="navigation-bar">
+        <div>
+          <a href="/index.html">Home</a>
+        </div>
+        <div>
+          <a href="/products.html">Products</a>
+        </div>
+        <div>
+          <a href="/blog.html">Blog</a>
+        </div>
+        <div>
+          <a href="/research.html">Research</a>
+        </div>
+        <div>
+          <a href="/about.html">About</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main style="max-width: none">
+      <section class="product-details">
+        <div class="product-details-container">
+          <!-- Product Image Section -->
+          <div class="product-image-gallery">
+            <div class="main-image">
+              <img src="src/images/product_img/Men/adidas Anthony Edwards1/over all.webp" alt="Children's Shoe - Blue/White" style="width: 100%; max-width: 400px" />
+            </div>
+            <div class="thumbnail-images">
+              <img src="src/images/product_img/Men/adidas Anthony Edwards1/adidas Anthony Edwards1 Low front.webp" alt="Side View" style="width: 80px; cursor: pointer" />
+              <img src="src/images/product_img/Men/adidas Anthony Edwards1/left.webp" alt="Back View" style="width: 80px; cursor: pointer" />
+              <img src="src/images/product_img/Men/adidas Anthony Edwards1/back.webp" alt="Top View" style="width: 80px; cursor: pointer" />
+              <img src="src/images/product_img/Men/adidas Anthony Edwards1/over all.webp" alt="Top View" style="width: 80px; cursor: pointer" />
+            </div>
+          </div>
+
+          <!-- Product Information Section -->
+          <div class="product-info">
+            <h1 class="product-title">Adidas Anthony Edwards1 Low</h1>
+            <p class="product-desc">Men's • Blue Burst/Black</p>
+            <div class="price-container">
+              <div class="price-group">
+                <span class="current-price">$94.25</span>
+                <span class="original-price">$210.00</span>
+                <span class="discount-badge">38% OFF</span>
+              </div>
+            </div>
+            <div class="size-selector">
+              <div class="size-header">
+                <strong>Select a size</strong>
+                <a href="#" class="size-chart-link">Size chart</a>
+              </div>
+              <p class="size-width">Width: D - Medium</p>
+              <div class="sizes-grid">
+                <!-- Use .size-box.disabled for unavailable sizes -->
+                <div class="size-box disabled">7.0</div>
+                <div class="size-box disabled">7.5</div>
+                <div class="size-box">8.0</div>
+                <div class="size-box">8.5</div>
+                <div class="size-box">9.0</div>
+                <div class="size-box">9.5</div>
+                <div class="size-box">10.0</div>
+                <div class="size-box">10.5</div>
+                <div class="size-box">11.0</div>
+                <div class="size-box">11.5</div>
+                <div class="size-box">12.0</div>
+                <div class="size-box disabled">12.5</div>
+                <div class="size-box disabled">13.0</div>
+                <div class="size-box disabled">13.5</div>
+                <div class="size-box disabled">14.0</div>
+                <div class="size-box disabled">15.0</div>
+                <div class="size-box disabled">16.0</div>
+                <div class="size-box disabled">17.0</div>
+                <div class="size-box disabled">18.0</div>
+                <div class="size-box disabled">19.0</div>
+                <div class="size-box disabled">20.0</div>
+              </div>
+            </div>
+            <br />
+            <button class="add-to-cart-btn" style=" padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">
+               Add to Cart </button>
+            <p class="shipping-info">Free shipping on orders over $75.</p>
+          </div>
+
+          <div class="product-details-wrapper" style="font-family: Arial, Helvetica, sans-serif; margin: 20px; padding: 0 15px; color: #333; width: 100%;">
+            <div class="toggle-header-product-detail" onclick="toggleDetails()">
+              <h2>Details</h2>
+              <span class="toggle-icon" id="toggle-icon">+</span>
+            </div>
+
+            <div class="product-details-content" id="details-content">
+              <p>
+                <strong>Product #:</strong> ABC<br />
+                <strong>Supplier-sku #:</strong> 1606-100
+              </p>
+
+              <p style="padding-bottom: 8px">
+                Ready to dominate the court? Equip yourself with the adidas Anthony Edwards 1 Low. A marvel designed for basketball enthusiasts, these unisex shoes feature innovative Boost and
+                Lightstrike technologies to help you bounce and attack the rim with next-level comfort. Made for big plays and even bigger statements, these trainers are crafted with Anthony Edwards’
+                touch, helping you make buckets in legendary style. Perfect for dynamic movements on the court, the adidas Anthony Edwards 1 Low helps you deliver top-tier performance on the court.
+              </p>
+
+              <p style="padding-bottom: 5px">
+                <strong>Adidas Anthony Edwards 1 Low features:</strong>
+              </p>
+              <ul>
+                <li>Regular fit ensures a snug feel.</li>
+                <li>Textile/synthetic upper provides comfort.</li>
+                <li>Rubber outsole delivers grip and traction.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="product-rating-wrapper" style=" font-family: Arial, Helvetica, sans-serif; margin: 20px; padding: 0 15px; color: #333; width: 100%; " >
+            <div class="toggle-header-rating" onclick="togglerating()">
+              <h2>Reviews ⭐⭐⭐⭐⭐</h2>
+              <span class="toggle-icon" id="rating-toggle-icon">+</span>
+            </div>
+
+            <div class="product-rating-content" id="rating-content">
+              <p><strong>Comfort</strong> <span>⭐⭐⭐⭐⭐</span></p>
+              <p><strong>Durability</strong> <span>⭐⭐⭐⭐☆</span></p>
+              <p><strong>Performance</strong> <span>⭐⭐⭐⭐⭐</span></p>
+              <p><strong>Style</strong> <span>⭐⭐⭐⭐⭐</span></p>
+              <p><strong>Overall Rating</strong> <span>4.9/5.0</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">Shop</h3>
+          <ul class="footer-links">
+            <li><a href="/products.html#mens-shoes">Men's Shoes</a></li>
+            <li><a href="/products.html#womens-shoes">Women's Shoes</a></li>
+            <li><a href="/products.html#children-shoes">Kids' Shoes</a></li>
+            <li><a href="src/Final Group Coursework Information System Documentation.pdf">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">About</h3>
+          <ul class="footer-links">
+            <li><a href="/about.html">Our Story</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/research.html">Research</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Help</h3>
+          <ul class="footer-links">
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Connect</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Daud Shoes. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script>
+      const mainImage = document.querySelector(".main-image img");
+      const thumbnails = document.querySelectorAll(".thumbnail-images img");
+      thumbnails.forEach((thumbnail) => {
+        thumbnail.addEventListener("click", () => {
+          mainImage.src = thumbnail.src;
+          mainImage.alt = thumbnail.alt;
+        });
+      });
+    </script>
+
+    <script src="src/js/products.js"></script>
+    <script src="src/js/product-detalis.js"></script>
+  </body>
+</html>

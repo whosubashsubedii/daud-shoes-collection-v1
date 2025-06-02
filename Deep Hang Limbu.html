@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Deep Hang Limbu, specializing in computer networking and IT security">
+    <meta name="keywords" content="Deep Hang Limbu, portfolio, computer networking, IT security, wireframe, blog">
+    <meta name="author" content="Deep Hang Limbu">
+    
+    <title>Deep Hang Limbu Portfolio</title>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="src/css/Deep Hang Limbu.css">
+    
+    <!-- Internal CSS -->
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #e0e0e0;
+            background-color: #1a1a1a;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+      
+        header {
+            background: linear-gradient(135deg, #8B0000, #4B0082);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+        
+       
+        nav {
+            background-color: #121212;
+            padding: 1rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+        
+        nav ul li a:hover {
+            color: #fff;
+            background-color: #8B0000;
+        }
+        
+        
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1, h2, h3 {
+            margin-top: 0;
+            color: #f0f0f0;
+        }
+        
+        
+        .profile-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .profile-image {
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            border: 3px solid #8B0000;
+            opacity: 1; 
+        }
+
+        .profile-image {
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              border-radius: 8px;
+        }
+        
+        .profile-image:hover {
+              transform: scale(1.05);
+              box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .skills-table th, .skills-table td {
+            border: none;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        .skills-table th {
+            background: linear-gradient(to right, #4B0082, #006666);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .skills-table tr:nth-child(even) {
+            background-color: #2a2a2a;
+        }
+        
+        .skills-table tr:nth-child(odd) {
+            background-color: #222222;
+        }
+        
+        
+        .hobbies-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+        
+        .hobby-card {
+            flex: 1;
+            text-align: center;
+            padding: 2rem;
+            margin: 0 1rem;
+            background: #222222;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .hobby-card:hover {
+            transform: translateY(-10px);
+            background: linear-gradient(135deg, #8B0000, #4B0082);
+            color: white;
+        }
+        
+        .hobby-card:hover .hobby-icon {
+            color: white;
+        }
+        
+        .hobby-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #8B0000;
+            transition: all 0.3s ease;
+        }
+        
+        
+        #contact {
+            background: linear-gradient(135deg, #222222, #1a1a1a);
+            border-radius: 20px;
+            margin-top: 3rem;
+            padding: 4rem 2rem;
+        }
+        
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-form-container {
+            flex: 2;
+            min-width: 300px;
+            background-color: #222222;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-form-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #8B0000, #4B0082, #006666);
+        }
+        
+        .contact-form {
+            width: 100%;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #f0f0f0;
+        }
+        
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #444;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background-color: #333333;
+            color: #e0e0e0;
+        }
+        
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #4B0082;
+            box-shadow: 0 0 0 3px rgba(75, 0, 130, 0.2);
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: 1.2rem;
+            background-color: #222222;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+        
+        .contact-method:nth-child(1) {
+            border-left-color: #8B0000;
+        }
+        
+        .contact-method:nth-child(2) {
+            border-left-color: #4B0082;
+        }
+        
+        .contact-method:nth-child(3) {
+            border-left-color: #006666;
+        }
+        
+        .contact-method:hover {
+            transform: translateX(10px);
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .contact-icon:nth-of-type(1) {
+            background: linear-gradient(135deg, #8B0000, #C71585);
+        }
+        
+        .contact-icon:nth-of-type(2) {
+            background: linear-gradient(135deg, #4B0082, #9370DB);
+        }
+        
+        .contact-icon:nth-of-type(3) {
+            background: linear-gradient(135deg, #006666, #20B2AA);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.4s ease;
+        }
+        
+        .social-link:nth-child(1) {
+            background: linear-gradient(135deg, #0077b5, #00a0dc);
+        }
+        
+        .social-link:nth-child(2) {
+            background: linear-gradient(135deg, #333, #6e5494);
+        }
+        
+        .social-link:nth-child(3) {
+            background: linear-gradient(135deg, #1da1f2, #0084b4);
+        }
+        
+        .social-link:nth-child(4) {
+            background: linear-gradient(135deg, #ea4c89, #c13584);
+        }
+        
+        .social-link:hover {
+            transform: translateY(-5px);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, #8B0000, #4B0082);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            background: linear-gradient(to right, #4B0082, #006666);
+        }
+        
+       
+        .success-message {
+            display: none;
+            background-color: rgba(0, 128, 0, 0.2);
+            border: 1px solid #006400;
+            color: #00ff00;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        
+        footer {
+            background: linear-gradient(to right, #121212, #000000);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 3rem;
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #8B0000, #4B0082, #006666);
+        }
+        
+        
+        @media (max-width: 768px) {
+            .hobbies-container {
+                flex-direction: column;
+            }
+            
+            .hobby-card {
+                margin: 1rem 0;
+            }
+            
+            .contact-container {
+                flex-direction: column;
+            }
+            
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .profile-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        
+        h2 {
+            position: relative;
+            display: inline-block;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: -10px;
+            left: 0;
+            background: linear-gradient(to right, #8B0000, #4B0082);
+            transition: width 0.5s ease;
+        }
+        
+        h2:hover::after {
+            width: 100%;
+        }
+        
+       
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        
+        a:focus, button:focus, input:focus, textarea:focus {
+            outline: 2px solid #4B0082;
+            outline-offset: 2px;
+        }
+        
+        /* Accessibility helper classes */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <div class="container">
+            <h1>Deep Hang Limbu</h1>
+            <p>Dedicated and aspiring professional in the field of Computer Networking and IT Security. I am currently Bachelor’s student at Islington College, where i building a strong foundation in areas such as network security, system administration, and digital solution development.</p>
+        </div>
+    </header>
+    
+ 
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+   
+    <div id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="profile-container">
+              
+                <img src="src/images/portfolio/deep.jpg" alt="Deep Hang Limbu" class="profile-image">
+                <div>
+                    <div style="font-size: 18px; color: #ccc; line-height: 1.8;">
+                        <p>I am passionate learner and emerging professional in IT, blending technical expertise with creative and outdoor interests. He’s focused on growing in the cybersecurity domain and contributing meaningfully to the tech world.</p>
+                    </div>
+                    
+                    <h3>My Hobbies</h3>
+                    <div class="hobbies-container">
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h4>Reading Books</h4>
+                            <p>I enjoy expanding my knowledge through reading technical and non-technical books.</p>
+                        </div>
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <i class="fas fa-hiking"></i>
+                            </div>
+                            <h4>Hiking</h4>
+                            <p>Exploring nature trails and mountains helps me stay active and refreshed.</p>
+                        </div>
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h4>Painting</h4>
+                            <p>I express my creativity through various painting techniques and styles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+    <div id="education" style="background-color: #222222;">
+        <div class="container">
+            <h2>Education & Experience</h2>
+            
+            <table class="skills-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Institution/Company</th>
+                        <th>Details</th>
+                        <th>Period</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Education</td>
+                        <td>Islington College</td>
+                        <td>Bachelor's in Computer Networking and IT Security</td>
+                        <td>Present</td>
+                    </tr>
+                    <tr>
+                        <td>Work Experience</td>
+                        <td>Code Fusion Technology</td>
+                        <td>Junior Computer Operator</td>
+                        <td>Past</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    
+    <div id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem; color: #aaa;">
+                Have a question or want to work together? Feel free to contact me using any of the methods below.
+            </p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin: 0; color: #f0f0f0;">Email</h4>
+                            <p style="margin: 5px 0 0;">deephanglimbu1@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin: 0; color: #f0f0f0;">Phone</h4>
+                            <p style="margin: 5px 0 0;">+977 9813583245</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin: 0; color: #f0f0f0;">Location</h4>
+                            <p style="margin: 5px 0 0;">Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3 style="margin-top: 0; color: #f0f0f0; text-align: center;">Send Me a Message</h3>
+                    
+                    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%; padding: 12px; font-size: 16px; border-radius: 30px;">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <footer>
+        <div class="container" style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
+                <a href="#" class="logo-link" style="padding-right: -3px;">
+                <img src="/src/images/portfolio/Prabin Pradhan/x-footer.webp" alt="Logo" class="logo">
+          Twitter
+        </a>
+
+      <a href="#" class="logo-link">
+        <img src="/src/images/portfolio/Prabin Pradhan/facebook-footer.png" alt="Logo" class="logo">
+        Facebook
+      </a>
+
+    <a href="#" class="logo-link">
+        <img src="/src/images/portfolio/Prabin Pradhan/instagram-footer.webp" alt="Logo" class="logo" style="width: 20px; margin-right: 8px;">
+        Instagram
+      </a></div>
+      <br>
+            <p>&copy; 2025 Deep Hang Limbu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

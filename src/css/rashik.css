@@ -1,0 +1,320 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Navigation */
+  header {
+    background: #111;
+    color: #fff;
+    padding: 20px 40px;
+    position: sticky;  /* sticky so that the header sticks to the top even when scrolling */
+    top: 0;
+    z-index: 999;  /* z-index makes sure that the header always stays above other elements */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;   /* flex is used so that the page dynamically adjusts to the change in size of the webpage  */
+    justify-content: space-between;
+  }
+  
+  nav h1 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;   /* the transition back from color change on hover. it is set to 0.3s so that it seems smooth */
+  }
+  
+  nav a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('../images/portfolio/rashik-assets/hero.jpg') center/cover no-repeat;
+    /* a gradient overlay on top of the hero image so that the image itself is not distracting */
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  /* Section Layout */
+  section {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: auto;
+    align-content: center;
+  }
+  
+  section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  section h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #00bcd4;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+  }
+
+  .section-subtext {
+    text-align: center;
+  }
+  
+  /* About Section */
+  #about p {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  /* Gallery */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .gallery-grid img {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-grid img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Skills */
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .skills-list li {
+    background: #e0f7fa;
+    color: #00796b;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  
+  /* Resume */
+  #resume {
+    text-align: center;
+  }
+
+  #resume a {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    background: #00bcd4;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  #resume a:hover {
+    background: #0097a7;
+  }
+  
+  /* Contact */
+  #contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #contact input, #contact textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  #contact button {
+    padding: 12px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #contact button:hover {
+    background: #008fa1;
+  }
+  
+  /* Social Links */
+  .social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-links a {
+    color: #00bcd4;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #007c91;
+  }
+  
+  /* Footer */
+  footer {
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 60px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero h2 {
+      font-size: 32px;
+    }
+  
+    section {
+      padding: 60px 20px;
+    }
+  }
+/* Music Section */
+.music-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .vinyl-icon img {
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+    filter: grayscale(30%);
+    animation: spin 20s linear infinite;
+  }
+  
+  .album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));   /* fr means available fraction  */
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .album-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
+  }
+  
+  .album-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .album-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .album-card h3 {
+    margin: 5px 0 3px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .album-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Vinyl Spin Animation */
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+    

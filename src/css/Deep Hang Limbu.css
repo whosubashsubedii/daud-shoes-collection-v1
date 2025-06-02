@@ -1,0 +1,54 @@
+
+  .container:hover {
+    transform: translateY(-15px);
+  }
+  
+
+  .container > a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    text-decoration-color: #e0e0e0;
+    text-decoration: none;
+  }
+
+  .container > a:hover {
+    text-decoration: underline;
+    text-decoration-color: #4fc3f7;
+    color: #4fc3f7;
+    transform: translateY(-3px);
+  }
+
+  .container-inner{
+        margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 30px; 
+    height: auto;
+    
+  }
+
+  .container > h3 {
+    color: #4fc3f7;
+    font-size: 1.5  rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    transition: color 0.4s ease, transform 0.4s ease;
+  }
+  
+  .container h3:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+  }
